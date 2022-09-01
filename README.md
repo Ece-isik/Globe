@@ -1,5 +1,6 @@
 # ece-isik.github.io
-# the website:
+# Website:
 https://ece-isik.github.io/Globe/src/index.html
-# references:
+# References:
 https://www.youtube.com/watch?v=vM8M4QloVL0
+
