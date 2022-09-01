@@ -1,6 +1,6 @@
 import './style.css'
-import * as THREE from 'three'
-import gsap from 'gsap'
+//import * as THREE from 'three'
+//import gsap from 'gsap'
 //import fragmentShader from './shaders/fragment.glsl'
 //import vertexShader from './shaders/vertex.glsl'
 
