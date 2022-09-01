@@ -1,4 +1,4 @@
-import './style.css'
+//import './style.css'
 //import * as THREE from 'three'
 //import gsap from 'gsap'
 //import fragmentShader from './shaders/fragment.glsl'
@@ -55,7 +55,8 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
  * Textures
  */
 const textureLoader = new THREE.TextureLoader()
-const earthUVMap = textureLoader.load('./textures/earth_uv_map.jpg')
+const earthUVMap = textureLoader.load(
+    'https://1.bp.blogspot.com/-UUXaK5GCj-k/UcsKJRMgkVI/AAAAAAAACfM/sePP_H08JTQ/s1600/1.jpg')
 
 /**
  * Objects
