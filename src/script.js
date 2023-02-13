@@ -176,7 +176,7 @@ const tick = () =>
     gsap.to(group.rotation, {x: mouse.y * 0.2, duration: 2})
     }
     
-    points.position.z = Math.sin(time * 0.5) * 2;
+    points.position.z = Math.sin(elapsedTime * 0.5) * 2;
     // Render
     renderer.render(scene, camera)
 
