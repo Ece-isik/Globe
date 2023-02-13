@@ -140,7 +140,7 @@ const material = new THREE.PointsMaterial({
     size: 3,       // in pixels
     
 });
-    const geometry = new THREE.SphereGeometry(7, 18, 14);
+    const geometry = new THREE.SphereGeometry(7, 24, 18);
 
     const points = new THREE.Points(geometry, material);
     scene.add(points);
