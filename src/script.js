@@ -138,20 +138,16 @@ const starMaterial = new THREE.PointsMaterial({
     color: '#ffffff'
 })
 
-const count = 2500
-const positions = new Float32Array(count*3)
-for(let i = 0; i < count; i+=3)
-{
-    const x = (Math.random() - 0.5) * 200
-    const y = (Math.random() - 0.5) * 200
-    const z = - Math.random() * 500
-    positions[i] = x
-    positions[i+1] = y
-    positions[i+2] = z
-}
-starGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3))
-const stars = new THREE.Points(starGeometry, starMaterial)
-scene.add(stars)
+const material = new THREE.PointsMaterial({
+    color: 0xffffff,
+    sizeAttenuation: false,
+    size: 12,       // in pixels
+    
+});
+    const geometry = new THREE.SphereGeometry(7, 12, 8);
+
+    const points = new THREE.Points(geometry, material);
+    scene.add(points);
 
 /**
  * Mouse
@@ -180,8 +176,7 @@ const tick = () =>
     gsap.to(group.rotation, {x: mouse.y * 0.2, duration: 2})
     }
     
-    const scale = Math.cos(elapsedTime)
-    stars.position.set(scale,scale,scale)
+    points.position.z = Math.sin(time * 0.5) * 2;
     // Render
     renderer.render(scene, camera)
 
