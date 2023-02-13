@@ -137,10 +137,10 @@ scene.add(group)
 const material = new THREE.PointsMaterial({
     color: 0xffffff,
     sizeAttenuation: false,
-    size: 12,       // in pixels
+    size: 3,       // in pixels
     
 });
-    const geometry = new THREE.SphereGeometry(7, 12, 8);
+    const geometry = new THREE.SphereGeometry(7, 18, 14);
 
     const points = new THREE.Points(geometry, material);
     scene.add(points);
