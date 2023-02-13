@@ -133,10 +133,6 @@ scene.add(group)
 /**
  * Stars
  */
-const starGeometry = new THREE.BufferGeometry()
-const starMaterial = new THREE.PointsMaterial({
-    color: '#ffffff'
-})
 
 const material = new THREE.PointsMaterial({
     color: 0xffffff,
